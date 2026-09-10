@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="A Tecnologia Conta História — uma experiência interativa para explorar os territórios, povos, biodiversidade e história do Maranhão.">
+
+    <title>A Tecnologia Conta História | Maranhão</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+        <div class="logo">
+            <span>🗺️</span>
+            <strong>A Tecnologia Conta História</strong>
+        </div>
+
+        <button class="menu-button" id="menuButton" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <nav id="mainNav">
+            <a href="#inicio">Início</a>
+            <a href="#mapa">Mapa</a>
+            <a href="#povos">Povos Indígenas</a>
+            <a href="#biodiversidade">Biodiversidade</a>
+            <a href="#historia">História</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#desafio">Desafio</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="tag">MARANHÃO • TERRITÓRIO • MEMÓRIA</span>
+
+                <h1>
+                    A Tecnologia
+                    <span>Conta História</span>
+                </h1>
+
+                <p>
+                    Explore os territórios do Maranhão e descubra histórias,
+                    culturas, povos, biodiversidade e curiosidades.
+                </p>
+
+                <a href="#mapa" class="primary-button">
+                    Explorar o Maranhão →
+                </a>
+
+            </div>
+
+            <div class="hero-illustration">
+                <div class="sun"></div>
+
+                <div class="floating-card card-one">
+                    🌿 Biodiversidade
+                </div>
+
+                <div class="floating-card card-two">
+                    🧭 Territórios
+                </div>
+
+                <div class="floating-card card-three">
+                    📖 História
+                </div>
+
+                <div class="map-decoration">
+                    MA
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= MAPA ================= -->
+
+        <section class="section map-section" id="mapa">
+
+            <div class="section-heading">
+
+                <span class="section-label">01 • EXPLORAÇÃO</span>
+
+                <h2>
+                    Mapa dos
+                    <span>Territórios</span>
+                </h2>
+
+                <p>
+                    Clique nas regiões do mapa para descobrir diferentes
+                    histórias e características do Maranhão.
+                </p>
+
+            </div>
+
+
+            <div class="map-container">
+
+                <!-- MAPA ILUSTRATIVO / SVG -->
+
+                <svg
+                    class="map-svg"
+                    viewBox="0 0 500 600"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="Mapa interativo do Maranhão">
+
+                    <!-- Norte -->
+
+                    <path
+                        class="territory"
+                        data-territory="norte"
+                        d="M150 60 L270 45 L340 100 L315 180 L220 170 L145 125 Z"
+                    />
+
+                    <!-- Centro -->
+
+                    <path
+                        class="territory"
+                        data-territory="centro"
+                        d="M145 125 L220 170 L315 180 L340 280 L280 330 L175 300 L120 220 Z"
+                    />
+
+                    <!-- Sul -->
+
+                    <path
+                        class="territory"
+                        data-territory="sul"
+                        d="M120 220 L175 300 L280 330 L300 470 L220 540 L115 500 L80 390 Z"
+                    />
+
+                    <!-- Oeste -->
+
+                    <path
+                        class="territory"
+                        data-territory="oeste"
+                        d="M80 120 L145 125 L120 220 L80 390 L45 350 L40 210 Z"
+                    />
+
+                    <!-- Leste -->
+
+                    <path
+                        class="territory"
+                        data-territory="leste"
+                        d="M340 100 L400 135 L430 230 L390 320 L300 470 L280 330 L340 280 L315 180 Z"
+                    />
+
+                </svg>
+
+
+                <!-- Painel lateral -->
+
+                <div class="map-info">
+
+                    <span class="section-label">SELECIONE UMA REGIÃO</span>
+
+                    <h3 id="territoryTitle">
+                        Explore o mapa
+                    </h3>
+
+                    <p id="territoryDescription">
+                        Clique em uma região do mapa para descobrir
+                        informações sobre seu território.
+                    </p>
+
+                    <button
+                        class="primary-button"
+                        id="exploreTerritory"
+                        disabled>
+                        Explorar território
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= GRÃO PARA ================= -->
+
+        <section class="grain-section">
+
+            <div class="grain">
+
+                <div class="grain-symbol">
+                    🌱
+                </div>
+
+                <div>
+                    <span class="section-label">PARE • OBSERVE • DESCUBRA</span>
+
+                    <h2>Grão para.</h2>
+
+                    <p>
+                        Às vezes é preciso parar para perceber que cada
+                        território possui histórias escondidas em seus
+                        detalhes.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= POVOS ================= -->
+
+        <section class="section" id="povos">
+
+            <div class="section-heading">
+
+                <span class="section-label">02 • IDENTIDADE</span>
+
+                <h2>
+                    Povos
+                    <span>Indígenas</span>
+                </h2>
+
+                <p>
+                    Conheça a diversidade dos povos indígenas do Maranhão
+                    e suas relações com seus territórios.
+                </p>
+
+            </div>
+
+
+            <div class="cards-grid">
+
+                <article class="info-card">
+
+                    <div class="card-icon">🧑🏽‍🤝‍🧑🏾</div>
+
+                    <h3>Povos e territórios</h3>
+
+                    <p>
+                        Explore informações sobre os povos indígenas,
+                        seus territórios e modos de vida.
+                    </p>
+
+                    <button class="text-button">
+                        Descobrir →
+                    </button>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <div class="card-icon">🌱</div>
+
+                    <h3>Conhecimentos tradicionais</h3>
+
+                    <p>
+                        Descubra conhecimentos e relações construídas
+                        entre comunidades e natureza.
+                    </p>
+
+                    <button class="text-button">
+                        Descobrir →
+                    </button>
+
+                </article>
+
+
+                <article class="info-card">
+
+                    <div class="card-icon">🏹</div>
+
+                    <h3>Memória e cultura</h3>
+
+                    <p>
+                        Conheça manifestações culturais e histórias
+                        transmitidas entre gerações.
+                    </p>
+
+                    <button class="text-button">
+                        Descobrir →
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BIODIVERSIDADE ================= -->
+
+        <section class="section green-section" id="biodiversidade">
+
+            <div class="section-heading">
+
+                <span class="section-label">03 • NATUREZA</span>
+
+                <h2>
+                    Biodiversidade
+                    <span>do Maranhão</span>
+                </h2>
+
+                <p>
+                    Uma viagem pelos ambientes, animais, plantas e rios
+                    que fazem parte do território maranhense.
+                </p>
+
+            </div>
+
+
+            <div class="nature-grid">
+
+                <div class="nature-card">
+                    <span>🌳</span>
+                    <h3>Florestas</h3>
+                    <p>
+                        Ambientes naturais e sua importância para a vida.
+                    </p>
+                </div>
+
+                <div class="nature-card">
+                    <span>🦜</span>
+                    <h3>Fauna</h3>
+                    <p>
+                        Conheça espécies que fazem parte da biodiversidade.
+                    </p>
+                </div>
+
+                <div class="nature-card">
+                    <span>🌿</span>
+                    <h3>Flora</h3>
+                    <p>
+                        Plantas e espécies características dos territórios.
+                    </p>
+                </div>
+
+                <div class="nature-card">
+                    <span>💧</span>
+                    <h3>Rios e águas</h3>
+                    <p>
+                        A importância das águas para os territórios.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HISTÓRIA ================= -->
+
+        <section class="section" id="historia">
+
+            <div class="section-heading">
+
+                <span class="section-label">04 • MEMÓRIA</span>
+
+                <h2>
+                    Uma História
+                    <span>em Movimento</span>
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span class="timeline-number">01</span>
+
+                    <div>
+                        <span class="timeline-date">ORIGENS</span>
+                        <h3>Antes dos registros escritos</h3>
+                        <p>
+                            Diferentes povos já habitavam e construíam
+                            suas histórias no território.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span class="timeline-number">02</span>
+
+                    <div>
+                        <span class="timeline-date">FORMAÇÃO</span>
+                        <h3>Transformações do território</h3>
+                        <p>
+                            O território maranhense passou por diferentes
+                            processos históricos e culturais.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span class="timeline-number">03</span>
+
+                    <div>
+                        <span class="timeline-date">PRESENTE</span>
+                        <h3>Histórias que continuam</h3>
+                        <p>
+                            A história permanece viva nas pessoas,
+                            comunidades e territórios.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CURIOSIDADES ================= -->
+
+        <section class="section curiosity-section" id="curiosidades">
+
+            <div class="section-heading">
+
+                <span class="section-label">05 • DESCOBERTA</span>
+
+                <h2>
+                    Você
+                    <span>Sabia?</span>
+                </h2>
+
+            </div>
+
+
+            <div class="curiosity-card" id="curiosityCard">
+
+                <div class="question-mark">?</div>
+
+                <p>
+                    Clique para descobrir uma curiosidade sobre
+                    o Maranhão.
+                </p>
+
+                <button class="primary-button" id="curiosityButton">
+                    Descobrir curiosidade
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DESAFIO ================= -->
+
+        <section class="challenge-section" id="desafio">
+
+            <div class="challenge-box">
+
+                <span class="section-label">06 • GAMIFICAÇÃO</span>
+
+                <h2>
+                    Desafio do
+                    <span>Explorador</span>
+                </h2>
+
+                <p id="question">
+                    Qual é a melhor maneira de conhecer um território?
+                </p>
+
+
+                <div class="answers">
+
+                    <button class="answer" data-answer="wrong">
+                        Apenas lendo sobre ele
+                    </button>
+
+                    <button class="answer" data-answer="correct">
+                        Explorando suas histórias e conhecimentos
+                    </button>
+
+                    <button class="answer" data-answer="wrong">
+                        Ignorando sua diversidade
+                    </button>
+
+                </div>
+
+
+                <div class="score">
+
+                    <span>Pontuação</span>
+
+                    <strong id="score">0</strong>
+
+                </div>
+
+
+                <p id="feedback" class="feedback"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= MODAL ================= -->
+
+    <div class="modal" id="territoryModal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Fechar">
+                ×
+            </button>
+
+            <span class="section-label">
+                TERRITÓRIO EXPLORADO
+            </span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalText"></p>
+
+            <div class="modal-details">
+
+                <div>
+                    <strong>🌿 Biodiversidade</strong>
+                    <p id="modalBio"></p>
+                </div>
+
+                <div>
+                    <strong>📖 História</strong>
+                    <p id="modalHistory"></p>
+                </div>
+
+                <div>
+                    <strong>💡 Curiosidade</strong>
+                    <p id="modalCuriosity"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>A Tecnologia Conta História</h3>
+
+        <p>
+            Cada território guarda uma história.
+            Explore, descubra e conte essa história.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            Projeto educativo • Maranhão
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
